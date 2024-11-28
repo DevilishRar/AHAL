@@ -1,0 +1,369 @@
+.play-content {
+    min-height: 100vh;
+    padding: 8rem 4rem 4rem;
+    background: url('../assets/play-bg.jpg') center/cover no-repeat;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.play-content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(10, 10, 10, 0.8), rgba(10, 10, 10, 0.95));
+}
+
+
+.server-panel {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 20px;
+    padding: 3rem;
+    border: 1px solid var(--stroke);
+    backdrop-filter: blur(10px);
+}
+
+.panel-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.panel-header h1 {
+    font-size: 2.5rem;
+    letter-spacing: 4px;
+}
+
+
+.connection-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.info-card {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid var(--stroke);
+    border-radius: 15px;
+    padding: 2rem;
+    transition: all 0.3s ease;
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--primary);
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.card-header i {
+    font-size: 1.5rem;
+    color: var(--primary);
+}
+
+.card-header h2 {
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+}
+
+.ip-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.ip-container code {
+    font-size: 1.2rem;
+    color: var(--primary);
+    letter-spacing: 1px;
+}
+
+.copy-button {
+    background: transparent;
+    border: 1px solid var(--stroke);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.copy-button:hover {
+    background: var(--primary);
+    border-color: var(--primary);
+}
+
+.version-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.version {
+    font-size: 1.5rem;
+    color: var(--accent);
+}
+
+.version-tag {
+    background: var(--primary);
+    color: white;
+    padding: 0.2rem 0.8rem;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+}
+
+
+.quick-start {
+    margin-bottom: 4rem;
+}
+
+.quick-start h2 {
+    font-size: 1.8rem;
+    letter-spacing: 3px;
+    margin-bottom: 2rem;
+}
+
+.steps-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.step {
+    position: relative;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid var(--stroke);
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.step:hover {
+    transform: translateY(-5px);
+    border-color: var(--primary);
+}
+
+.step::after {
+    content: '→';
+    position: absolute;
+    right: -1.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--primary);
+    font-size: 1.5rem;
+    z-index: 1;
+}
+
+.step:last-child::after {
+    display: none;
+}
+
+.step-number {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: rgba(255, 255, 255, 0.05);
+}
+
+.step-content h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.step-content p {
+    opacity: 0.7;
+    font-size: 0.9rem;
+}
+
+
+.community-links {
+    text-align: center;
+}
+
+.community-links h2 {
+    font-size: 1.8rem;
+    letter-spacing: 3px;
+    margin-bottom: 2rem;
+}
+
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.social-btn {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid var(--stroke);
+    padding: 1.5rem 2rem;
+    border-radius: 15px;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.3s ease;
+    min-width: 200px;
+}
+
+.social-btn i {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.social-btn span {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.social-btn .member-count,
+.social-btn .follower-count,
+.social-btn .sub-count {
+    font-size: 0.8rem;
+    opacity: 0.7;
+}
+
+.social-btn.discord {
+    border-color: #7289da;
+}
+
+.social-btn.discord:hover {
+    background: #7289da;
+}
+
+.social-btn.twitter {
+    border-color: #1DA1F2;
+}
+
+.social-btn.twitter:hover {
+    background: #1DA1F2;
+}
+
+.social-btn.youtube {
+    border-color: #FF0000;
+}
+
+.social-btn.youtube:hover {
+    background: #FF0000;
+}
+
+.social-btn.coming-soon {
+    opacity: 0.7;
+    cursor: not-allowed;
+    position: relative;
+    overflow: hidden;
+}
+
+.social-btn.coming-soon::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 200%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.2),
+        transparent
+    );
+    animation: shine 2s infinite;
+}
+
+@keyframes shine {
+    to {
+        left: 100%;
+    }
+}
+
+
+.player-stats {
+    display: flex;
+    gap: 2rem;
+    margin-top: 4rem;
+    position: relative;
+}
+
+.stat-card {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid var(--stroke);
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    min-width: 200px;
+}
+
+.stat-value {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+
+.stat-label {
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    opacity: 0.7;
+}
+
+
+@media (max-width: 1200px) {
+    .connection-info,
+    .steps-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .step::after {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .play-content {
+        padding: 6rem 2rem 2rem;
+    }
+
+    .connection-info,
+    .steps-container {
+        grid-template-columns: 1fr;
+    }
+
+    .social-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .player-stats {
+        flex-direction: column;
+    }
+
+    .panel-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+}

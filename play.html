@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AHAL</title>
+    <meta content="Play AHAL" property="og:title" />
+    <meta content="Experience a lifetime in an hour - A unique Minecraft life simulation server" property="og:description" />
+    <meta content="https://iili.io/2lcj1iG.png" property="og:image" />
+    <meta name="twitter:card" content="summary_large_image">
+    <meta content="#ff3e3e" data-react-helmet="true" name="theme-color" />
+    <link rel="icon" type="image/png" href="https://iili.io/2lcj1iG.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/play.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/gh/leonardosnt/mc-player-counter/dist/mc-player-counter.min.js"></script>
+</head>
+<body>
+    <div class="noise-overlay"></div>
+    
+    <nav class="game-nav">
+        <div class="nav-left">
+            <div class="nav-logo">AHAL</div>
+            <div class="nav-separator"></div>
+            <span class="nav-subtitle">A HOUR A LIFE</span>
+        </div>
+        <div class="nav-right">
+            <a href="home.html" class="nav-item">
+                <div class="nav-highlight"></div>
+                <span>HOME</span>
+            </a>
+            <a href="about.html" class="nav-item">
+                <div class="nav-highlight"></div>
+                <span>ABOUT</span>
+            </a>
+            <a href="features.html" class="nav-item">
+                <div class="nav-highlight"></div>
+                <span>FEATURES</span>
+            </a>
+            <a href="play.html" class="nav-item play-btn active">
+                <div class="btn-glow"></div>
+                <span>PLAY NOW</span>
+            </a>
+        </div>
+    </nav>
+
+    <main class="play-content">
+        <div class="server-panel">
+            <div class="panel-header">
+                <h1>JOIN THE SERVER</h1>
+                <div class="server-status">
+                    <div class="status-icon online"></div>
+                    <span>SERVER ONLINE</span>
+                </div>
+            </div>
+
+            <div class="connection-info">
+                <div class="info-card">
+                    <div class="card-header">
+                        <i class="fas fa-server"></i>
+                        <h2>SERVER ADDRESS</h2>
+                    </div>
+                    <div class="ip-container">
+                        <code>AHAL.minehut.gg</code>
+                        <button class="copy-button" onclick="copyServerIP()">
+                            <i class="fas fa-copy"></i>
+                            <span>Copy</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <div class="card-header">
+                        <i class="fas fa-code-branch"></i>
+                        <h2>VERSION</h2>
+                    </div>
+                    <div class="version-info">
+                        <span class="version">1.21.1</span>
+                        <span class="version-tag">LATEST</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="quick-start">
+                <h2>QUICK START GUIDE</h2>
+                <div class="steps-container">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3>Launch Minecraft</h3>
+                            <p>Open Minecraft Java Edition (1.21 or 1.21.1)</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3>Add Server</h3>
+                            <p>Click Multiplayer → Add Server</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h3>Enter Address</h3>
+                            <p>Paste the server address: AHAL.minehut.gg</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h3>Join Game</h3>
+                            <p>Click Done → Select Server → Join Server</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="community-links">
+                <h2>JOIN OUR COMMUNITY</h2>
+                <div class="social-buttons">
+                    <a href="https://discord.gg/yourdiscord" class="social-btn discord">
+                        <i class="fab fa-discord"></i>
+                        <span>JOIN DISCORD</span>
+                    </a>
+                    <a href="#" class="social-btn twitter">
+                        <i class="fab fa-twitter"></i>
+                        <span>FOLLOW US</span>
+                    </a>
+                    <a href="#" class="social-btn youtube">
+                        <i class="fab fa-youtube"></i>
+                        <span>WATCH NOW</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="player-stats">
+            <div class="stat-card">
+                <div class="stat-value" data-playercounter-ip="AHAL.minehut.gg">0</div>
+                <div class="stat-label">PLAYERS ONLINE</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">98.2%</div>
+                <div class="stat-label">UPTIME</div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/play.js"></script>
+</body>
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AHAL</title>
+    <meta content="Play AHAL" property="og:title" />
+    <meta content="Experience a lifetime in an hour - A unique Minecraft life simulation server" property="og:description" />
+    <meta content="https://iili.io/2lcj1iG.png" property="og:image" />
+    <meta name="twitter:card" content="summary_large_image">
+    <meta content="#ff3e3e" data-react-helmet="true" name="theme-color" />
+    <link rel="icon" type="image/png" href="https://iili.io/2lcj1iG.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/gh/leonardosnt/mc-player-counter/dist/mc-player-counter.min.js"></script>
+</head>
+<body>
+    <div class="noise-overlay"></div>
+    
+    <nav class="game-nav">
+        <div class="nav-left">
+            <div class="nav-logo">AHAL</div>
+            <div class="nav-separator"></div>
+            <span class="nav-subtitle">A HOUR A LIFE</span>
+        </div>
+        <div class="nav-right">
+            <a href="home.html" class="nav-item active">
+                <div class="nav-highlight"></div>
+                <span>HOME</span>
+            </a>
+            <a href="about.html" class="nav-item">
+                <div class="nav-highlight"></div>
+                <span>ABOUT</span>
+            </a>
+            <a href="features.html" class="nav-item">
+                <div class="nav-highlight"></div>
+                <span>FEATURES</span>
+            </a>
+            <a href="play.html" class="nav-item play-btn">
+                <div class="btn-glow"></div>
+                <span>PLAY NOW</span>
+            </a>
+        </div>
+    </nav>
+
+    <main class="home-content">
+        <div class="hero-section">
+            <div class="hero-title">
+                <h1 class="glitch-text">AHAL</h1>
+                <div class="title-stroke"></div>
+            </div>
+            <p class="hero-subtitle">EXPERIENCE A LIFETIME IN AN HOUR</p>
+            
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <div class="stat-value">60</div>
+                    <div class="stat-label">MINUTES</div>
+                </div>
+                <div class="stat-separator"></div>
+                <div class="stat-item">
+                    <div class="stat-value">∞</div>
+                    <div class="stat-label">POSSIBILITIES</div>
+                </div>
+                <div class="stat-separator"></div>
+                <div class="stat-item">
+                    <div class="stat-value" data-playercounter-ip="AHAL.minehut.gg">0</div>
+                    <div class="stat-label">PLAYERS ONLINE</div>
+                </div>
+            </div>
+
+            <div class="hero-cta">
+                <a href="play.html" class="cta-button">
+                    <span class="btn-text">START YOUR JOURNEY</span>
+                    <div class="btn-arrow">→</div>
+                </a>
+            </div>
+        </div>
+
+        <div class="game-phases">
+            <div class="phase-title">
+                <h2>YOUR JOURNEY</h2>
+                <div class="title-accent"></div>
+            </div>
+            <div class="phases-container">
+                <div class="phase-card">
+                    <div class="phase-number">01</div>
+                    <h3>BIRTH</h3>
+                    <p>Begin your journey as a newborn. Choose your path and initial traits.</p>
+                    <div class="phase-icon">
+                        <i class="fas fa-baby"></i>
+                    </div>
+                </div>
+                <div class="phase-card">
+                    <div class="phase-number">02</div>
+                    <h3>GROWTH</h3>
+                    <p>Develop skills, form relationships, and build your legacy.</p>
+                    <div class="phase-icon">
+                        <i class="fas fa-child"></i>
+                    </div>
+                </div>
+                <div class="phase-card">
+                    <div class="phase-number">03</div>
+                    <h3>MASTERY</h3>
+                    <p>Perfect your craft and pass knowledge to the next generation.</p>
+                    <div class="phase-icon">
+                        <i class="fas fa-crown"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="experience-section">
+            <div class="exp-content">
+                <h2>UNIQUE EXPERIENCE</h2>
+                <div class="exp-grid">
+                    <div class="exp-card">
+                        <div class="exp-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h3>TIME-BASED PROGRESSION</h3>
+                        <p>Experience different life stages as time progresses, with each minute counting towards your journey.</p>
+                    </div>
+                    <div class="exp-card">
+                        <div class="exp-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>MULTIPLAYER WORLD</h3>
+                        <p>Interact with other players, form relationships, and create lasting impacts on the world.</p>
+                    </div>
+                    <div class="exp-card">
+                        <div class="exp-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h3>ENDLESS POSSIBILITIES</h3>
+                        <p>Chart your own path through life with countless choices and opportunities.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="join-section">
+            <div class="join-content">
+                <h2>START YOUR LEGACY</h2>
+                <div class="server-info">
+                    <div class="info-item">
+                        <span class="info-label">SERVER IP</span>
+                        <div class="ip-display">
+                            <code>AHAL.minehut.gg</code>
+                            <button class="copy-ip" onclick="copyIP()">
+                                <i class="fas fa-copy"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="info-separator"></div>
+                    <div class="info-item">
+                        <span class="info-label">VERSION</span>
+                        <span class="version">1.21.1</span>
+                    </div>
+                </div>
+                <div class="join-buttons">
+                    <a href="https://discord.gg/yourdiscord" class="discord-button">
+                        <i class="fab fa-discord"></i>
+                        <span>JOIN DISCORD</span>
+                    </a>
+                    <a href="play.html" class="play-now-button">
+                        <span>PLAY NOW</span>
+                        <div class="button-glow"></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="server-status">
+        <div class="status-icon online"></div>
+        <span class="status-text">SERVER ONLINE</span>
+        <span class="player-count" data-playercounter-ip="AHAL.minehut.gg">0</span>
+    </div>
+
+    <script src="js/home.js"></script>
+</body>
+</html>
